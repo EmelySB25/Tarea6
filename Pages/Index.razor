@@ -1,0 +1,14 @@
+﻿@page "/"
+@using Tarea6.Components
+
+<AuthorizeView>
+    <Authorized>
+        <Principal />
+    </Authorized>
+    <NotAuthorized>
+        <p class="h2">
+             Iniciar Sesión para que empiezar a guardar Secretos
+        </p>
+    </NotAuthorized>
+</AuthorizeView>
+
